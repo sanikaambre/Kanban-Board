@@ -1,0 +1,65 @@
+.dashboard-main {
+    background-color: rgb(241, 242, 243);
+    height: fit-content;
+    width: fit-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-family: 'Montserrat', sans-serif;
+    position: absolute;
+    z-index: -1;
+}
+
+.dashboard-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    min-width: 250px;
+    margin: 0 10px;
+}
+
+.dashboard-list-header-controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 270px;
+    margin: 10px
+}
+
+.dashboard-list-header-controls-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.dashboard-list-items-count {
+    margin: 0 8px;
+    color: #808080;
+}
+
+.dashboard-list-header {
+    margin-left: 10px;
+    font-size: 15px;
+    /* font-weight: 600; */
+    color:rgba(0, 0, 0, .8);
+}
+
+@media screen and (max-width: 920px) {
+    .dashboard-main {
+        height: fit-content;
+        width: 100vw;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
